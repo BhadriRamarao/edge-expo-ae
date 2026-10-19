@@ -1,0 +1,14 @@
+# Table Schemas
+type Dog @table @export {
+	id: ID @primaryKey
+	name: String
+	breed: String
+	age: Int
+}
+
+type ExpoConfig @table @export {
+  id: Long @primaryKey
+  tenant: String
+  content: Blob
+  jsonContent: Any
+}
